@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tapados de Ruido</title>
+<link rel="stylesheet" href="estilo.css">
+<link rel="preload" href="fonts/FONTSPRINGDEMO-PODIUMSharp110Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">OLGA</h1>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+
+        <!-- Texto -->
+        <div class="hero-text">
+          <h2 class="hero-title">
+            COMUNIDAD, MUSICA Y RUIDO EN VIVO
+          </h2>
+
+          <div class="hero-tags">
+            <span class="tag">La Plata</span>
+            <span class="tag">Rock + urbano</span>
+            <span class="tag">En vivo</span>
+          </div>
+
+          <p class="hero-description">
+            Tapados de Ruido es un evento musical en La Plata que busca visibilizar artistas locales emergentes, combinando rock y música urbana en una propuesta comunitaria y diversa.
+          </p>
+
+          <!-- CTA que abre el modal -->
+          <button class="btn-primary" id="open-modal">
+            CONSEGUÍ TU ENTRADA
+          </button>
+
+          <p class="hero-date">
+            19 de noviembre · Hipódromo de La Plata  
+            <a href="mas-info.html" class="more-info">Ver más info</a>
+          </p>
+        </div>
+
+        <!-- Imagen -->
+        <div class="hero-image">
+          <img src="img/tapados de ruido.png" alt="Ilustración Tapados de Ruido">
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="modal-close" id="close-modal">×</button>
+
+      <h3>Accedé a tus entradas</h3>
+
+      <form class="modal-form">
+        <label>
+          Nombre
+          <input type="text" name="nombre" required>
+        </label>
+
+        <label>
+          Apellido
+          <input type="text" name="apellido" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+
+        <button type="submit" class="btn-primary">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="js/modal.js"></script>
+
+</body>
+</html>
