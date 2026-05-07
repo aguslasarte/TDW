@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tapados de Ruido</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="estilo.css">
 <link rel="preload" href="fonts/FONTSPRINGDEMO-PODIUMSharp110Regular.woff2" as="font" type="font/woff2" crossorigin>
 
@@ -26,7 +29,7 @@
         <!-- Texto -->
         <div class="hero-text">
           <h2 class="hero-title">
-            COMUNIDAD, MUSICA Y RUIDO EN VIVO
+            COMUNIDAD, MUSICA Y <span class="titulo-ruido">RUIDO</span> EN VIVO
           </h2>
 
           <div class="hero-tags">
@@ -41,13 +44,16 @@
 
           <!-- CTA que abre el modal -->
           <button class="btn-primary" id="open-modal">
-            CONSEGUÍ TU ENTRADA
+            CONSEGUÍ TU <strong>ENTRADA</strong>
           </button>
 
-          <p class="hero-date">
-            19 de noviembre · Hipódromo de La Plata  
-            <a href="mas-info.html" class="more-info">Ver más info</a>
-          </p>
+          <div class="hero-meta">
+            <p class="hero-date">
+              <span class="hero-date-icon">📅</span>
+              <strong>19 de noviembre</strong> · Hipódromo de La Plata
+            </p>
+            <a href="mas-info.html" class="more-info">Ver más info →</a>
+          </div>
         </div>
 
         <!-- Imagen -->
@@ -69,17 +75,17 @@
       <form class="modal-form">
         <label>
           Nombre
-          <input type="text" name="nombre" required>
+          <input type="text" name="nombre" autocomplete="given-name" required>
         </label>
 
         <label>
           Apellido
-          <input type="text" name="apellido" required>
+          <input type="text" name="apellido" autocomplete="family-name" required>
         </label>
 
         <label>
           Email
-          <input type="email" name="email" required>
+          <input type="email" name="email" autocomplete="email" required>
         </label>
 
         <button type="submit" class="btn-primary">Enviar</button>
